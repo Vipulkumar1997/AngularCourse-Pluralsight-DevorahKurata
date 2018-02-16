@@ -1,0 +1,52 @@
+[
+    {
+        "productId": 1,
+        "productNombre": "Leaf Rake",
+        "productCodigo": "GDN-0011",
+        "fechaSalida": "March 19, 2016",
+        "descripcion": "Leaf rake with 48-inch wooden handle.",
+        "precio": 19.95,
+        "rating": 3.2,
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+    },
+    {
+        "productId": 2,
+        "productNombre": "Garden Cart",
+        "productCodigo": "GDN-0023",
+        "fechaSalida": "March 18, 2016",
+        "descripcion": "15 gallon capacity rolling garden cart",
+        "precio": 32.99,
+        "rating": 4.2,
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+    },
+    {
+        "productId": 5,
+        "productNombre": "Hammer",
+        "productCodigo": "TBX-0048",
+        "fechaSalida": "May 21, 2016",
+        "descripcion": "Curved claw steel hammer",
+        "precio": 8.9,
+        "rating": 4.8,
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+    },
+    {
+        "productId": 8,
+        "productNombre": "Saw",
+        "productCodigo": "TBX-0022",
+        "fechaSalida": "May 15, 2016",
+        "descripcion": "15-inch steel blade hand saw",
+        "precio": 11.55,
+        "rating": 3.7,
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
+    },
+    {
+        "productId": 10,
+        "productNombre": "Video Game Controller",
+        "productCodigo": "GMG-0042",
+        "fechaSalida": "October 15, 2015",
+        "descripcion": "Standard two-button video game controller",
+        "precio": 35.95,
+        "rating": 4.6,
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
+    }
+]

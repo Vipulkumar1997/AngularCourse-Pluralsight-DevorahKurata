@@ -1,0 +1,14 @@
+<div>
+  <nav class="navbar navbar-inverse navbar-blue">
+    <div class="container-fluid">
+      <a class="navbar-brand navbar-text-blue">{{tituloPagina}}</a>
+      <ul class="nav navbar-nav">
+        <li><a class="navbar-text-blue" [routerLink]="['/welcome']">Inicio</a></li>
+        <li><a class="navbar-text-blue" [routerLink]="['/productos']">Productos</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+      <router-outlet></router-outlet>
+  </div>
+</div>

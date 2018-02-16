@@ -1,0 +1,50 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        {{tituloPagina}}
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-2">Filtrar Por: </div>
+            <div class="col-md-4">
+                <input type="text" [(ngModel)]='listFiltro'>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Filtrado por: {{listFiltro | uppercase}} </h3>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table" *ngIf='productos && productos.length'>
+                <thead>
+                    <th>
+                        <button class="btn btn-primary" (click)='toggleImage()'>
+                            {{showImage ? 'Ocultar' : 'Mostrar'}} Imagenes 
+                        </button>
+                    </th>
+                    <th>Productos</th>
+                    <th>Codigos</th>
+                    <th>Fecha de Salida</th>
+                    <th>Precio</th>
+                    <th>Rating</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let producto of filtroProductos' >
+                        <td>
+                            <img *ngIf='showImage' 
+                                [src]='producto.imageUrl'
+                                [title]='producto.productNombre | uppercase'
+                                [style.width.px]='imageWidth'
+                                [style.margin.px]='imageMargin'/>
+                        </td>
+                        <td><a [routerLink]="['/productos', producto.productId]">{{producto.productNombre}}</a></td>
+                        <td>{{producto.productCodigo | lowercase | convertToSpaces: '-'}}</td>
+                        <td>{{producto.fechaSalida}}</td>
+                        <td>{{producto.precio | currency:'USD':true:'1.2-2'}}</td>
+                        <td><ipm-star [rating]='producto.rating' (ratingClicked)='onRatingClicked($event)' ></ipm-star></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
